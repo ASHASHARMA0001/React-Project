@@ -1,0 +1,49 @@
+body{
+  background-color: black;
+  color: white;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input{
+  margin-left: 450px;
+}
+.flex{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+  gap: 10px;
+}
+.flex .items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  object-fit: cover;
+}
+.flex .items img{
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+  display: inline-block;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+.flex .items img:hover{
+  transform: scale(1.1);
+  border: 2px solid blue;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img img{
+  width: 500px;
+}
